@@ -1,4 +1,6 @@
 const express = require('express');
+const exphbs  = require('express-handlebars');
+const path = require('path'); 
 const session = require('express-session');
 const sequelizeStore = require('connect-session-sequelize')(session.Store);
 const routes = require('./routes');
@@ -8,7 +10,14 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
+
+// Set Handlebars as the template engine
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
+
+// Specify the directory where Handlebars views are located
+app.set('views', path.join(__dirname, 'views'));
 
 const sessionStore = new sequelizeStore({
   db: sequelize
