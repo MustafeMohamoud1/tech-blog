@@ -3,7 +3,7 @@ const router = express.Router();
 const authController = require('../controllers/authController');
 
 // Route to render the login/register page
-router.get('/login-register', (req, res) => {
+router.get('/', (req, res) => {
     res.render('login-register');
 });
 

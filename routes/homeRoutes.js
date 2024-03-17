@@ -2,7 +2,7 @@ const router = require("express").Router();
 const withAuth = require("authController");
 
 // Route to render the home page
-router.get('/', withAuth, (req, res) => {
+router.get('/home', withAuth, (req, res) => {
     res.render('home');
 });
 
