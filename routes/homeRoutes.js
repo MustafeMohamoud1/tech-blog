@@ -5,3 +5,5 @@ const withAuth = require("authController");
 router.get('/', withAuth, (req, res) => {
     res.render('home');
 });
+
+module.exports = router;
