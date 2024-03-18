@@ -7,14 +7,14 @@ body {
 }
 
 h1, header, #blogName {
-  background-color: #84a59d; /* Update background color */
+  background-color: #1d3551; /* Update background color */
   color: white; /* Change text color to white */
   padding: 16px;
   margin: 0; /* Reset default margin */
 }
 
 main {
-  background-color: #001f3f; /* Darker navy for main section */
+  background-color: #1d3551; /* Darker navy for main section */
   margin-top: 20px; /* Adjust margin-top for better spacing with the Navbar */
 }
 
@@ -30,7 +30,7 @@ main {
 
 /* Nav styles */
 .navBar {
-  background-color: #84a59d; /* Update background color */
+  background-color: #1d3551; /* Update background color */
   margin-bottom: 20px; /* Adjust margin to separate the Navbar from the content */
 }
 
@@ -48,7 +48,7 @@ main {
 
 /* Button styles */
 .btn {
-  background-color: #84a59d; /* Update background color */
+  background-color: #5615ab; /* Update background color */
   color: white; /* Change text color to white */
   padding: 8px 16px; /* Add padding for better spacing */
   border: none; /* Remove default border */
@@ -57,7 +57,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #639084; /* Darken background color on hover */
+  background-color: #290952; /* Darken background color on hover */
 }
 
 /* Card styles */
