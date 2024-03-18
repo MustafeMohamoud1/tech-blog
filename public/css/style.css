@@ -1,93 +1,76 @@
 /* General page styles */
-header {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
   margin: 0; /* Reset default body margin */
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-  color: black;
+h1, header, #blogName {
+  background-color: #84a59d; /* Update background color */
+  color: white; /* Change text color to white */
   padding: 16px;
   margin: 0; /* Reset default margin */
 }
 
-#blogName {
-  color: black;
-}
-
 main {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #a28089;
   margin-top: 20px; /* Adjust margin-top for better spacing with the Navbar */
 }
 
-.homepage-main {
+.homepage-main, .blogPost-main {
   margin-top: 54px; /* Adjust margin-top to accommodate the Navbar height */
 }
 
 .user-name {
   background-color: whitesmoke;
-}
-
-.blogPost-main {
-  margin-top: 54px; /* Adjust margin-top to accommodate the Navbar height */
+  padding: 8px 16px; /* Add padding for better spacing */
+  border-radius: 5px; /* Add border radius for rounded corners */
 }
 
 /* Nav styles */
 .navBar {
-  background-color: whitesmoke;
+  background-color: #84a59d; /* Update background color */
   margin-bottom: 20px; /* Adjust margin to separate the Navbar from the content */
 }
 
 .navbar-brand,
 .navbar-nav a,
 #logout {
-  color: #ffe5ec;
-}
-
-#logout {
-  background-color: #84a59d;
-}
-
-/* Input/textarea styles */
-
-/* Button styles */
-.btn {
-  background-color: black; /* Change background color to black */
   color: white; /* Change text color to white */
 }
 
+#logout {
+  background-color: #e5eaf5; /* Update background color */
+  padding: 8px 16px; /* Add padding for better spacing */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Button styles */
+.btn {
+  background-color: #84a59d; /* Update background color */
+  color: white; /* Change text color to white */
+  padding: 8px 16px; /* Add padding for better spacing */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.btn:hover {
+  background-color: #639084; /* Darken background color on hover */
+}
+
 /* Card styles */
-.card-header {
-  background-color: #e5eaf5;
-}
-
-.card-body {
-  background-color: whitesmoke;
-}
-
 .card {
-  background-color: #ffe5ec;
+  background-color: #e5eaf5;
+  margin-bottom: 20px; /* Add margin to separate cards */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  transition: all 0.3s ease; /* Add transition for smoother hover effect */
 }
 
 .card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
-/* Additional styles for better readability and consistency */
-a {
-  text-decoration: none; /* Remove default underline for links */
-}
-
-a:hover {
-  text-decoration: underline; /* Add underline on hover for links */
+  transform: scale(1.05); /* Scale card on hover for depth effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Darken box shadow on hover */
 }
 
   
