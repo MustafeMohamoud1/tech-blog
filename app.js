@@ -3,7 +3,7 @@ const exphbs = require('express-handlebars');
 const path = require('path'); 
 const session = require('express-session');
 const sequelizeStore = require('connect-session-sequelize')(session.Store);
-const routes = require('./routes');
+// const routes = require('./routes');
 const sequelize = require('./models');
 const dotenv = require('dotenv');
 

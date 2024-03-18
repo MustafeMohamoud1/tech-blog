@@ -1,13 +1,36 @@
-const Sequelize = require('sequelize');
+// Imports
+const User = require("./user");
+const BlogPost = require("./blogPost");
+const Comment = require("./comment");
 
-require('dotenv').config();
+// Sets up relationship between tables and allows me to join them using Sequelize
+User.hasMany(BlogPost, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
 
-const sequelize = process.env.JAWSDB_URL
-  ? new Sequelize(process.env.JAWSDB_URL)
-  : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
-      host: 'localhost',
-      dialect: 'mysql',
-      port: 3306
-    });
+BlogPost.belongsTo(User, {
+  foreignKey: "user_id",
+});
 
-module.exports = sequelize;
+User.hasMany(Comment, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
+
+Comment.belongsTo(User, {
+  foreignKey: "user_id",
+});
+
+Comment.belongsTo(BlogPost, {
+  foreignKey: "blogPost_id",
+  onDelete: "CASCADE",
+});
+
+BlogPost.hasMany(Comment, {
+  foreignKey: "blogPost_id",
+  onDelete: "CASCADE",
+});
+
+// Export
+module.exports = { User, BlogPost, Comment };
