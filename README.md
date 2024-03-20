@@ -29,4 +29,6 @@ Deployed APP:
 
 
 Screenshots:
-[label](../../Screenshot%202024-03-20%20at%2017.38.20.png%0D) [label](../../Screenshot%202024-03-20%20at%2017.38.12.png%0D) ![Alt text](../../Screenshot%202024-03-20%20at%2017.37.59.png)
+![Alt text](assets/Screenshot%202024-03-20%20at%2017.37.59.png)
+![Alt text](assets/Screenshot%202024-03-20%20at%2017.38.12.png)
+![Alt text](assets/Screenshot%202024-03-20%20at%2017.38.20.png)
