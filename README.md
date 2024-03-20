@@ -10,6 +10,7 @@ Comments: Users can leave comments on blog posts to engage in discussions and pr
 Responsive Design: The application is designed to work seamlessly across different devices, including desktops, tablets, and mobile phones.
 
 How to Use:
+
 - Sign Up/Login: If you're a new user, sign up for an account with your email and password. If you already have an account, simply log in.
 - Create a Post: Once logged in, navigate to the dashboard to create a new blog post
 - Fill in the title, content, and any other relevant information.
@@ -23,9 +24,9 @@ Database: MySQL, Sequelize ORM
 Authentication: Express Session, bcrypt.js
 Deployment: Heroku, GitHub
 
-To run the application locally:
+Deployed APP:
+- https://musty-tech-blog-fcdf3fa578a8.herokuapp.com
 
-- Clone this repository to your local machine.
-- Install dependencies using npm install.
-- Run the application using node server.js
-- Access the application in your web browser at http://localhost:3001
+
+Screenshots:
+[label](../../Screenshot%202024-03-20%20at%2017.38.20.png%0D) [label](../../Screenshot%202024-03-20%20at%2017.38.12.png%0D) ![Alt text](../../Screenshot%202024-03-20%20at%2017.37.59.png)
